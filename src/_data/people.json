@@ -21,6 +21,13 @@
      },
      
      {
+          "name": "Grace Hopper",
+          "desc": "Software engineer",
+          "link": "https://en.wikipedia.org/wiki/Grace_Hopper",
+          "photo_url": "/_media/inspirations/Grace-Hopper.jpg"
+     },
+     
+     {
           "name": "Leslie Lamport",
           "desc": "Computer scientist and mathematician",
           "link": "https://en.wikipedia.org/wiki/Leslie_Lamport",
@@ -35,7 +42,7 @@
      },
      
      {
-          "name": "Dennis Ritchie ",
+          "name": "Dennis Ritchie",
           "desc": "Computer Scientist",
           "link": "https://en.wikipedia.org/wiki/Dennis_Ritchie",
           "photo_url": "/_media/inspirations/Dennis-Ritchie.jpg"
@@ -56,7 +63,7 @@
      },
      
      {
-          "name": "Douglas Englebart",
+          "name": "Douglas Engelbart",
           "desc": "Engineer and inventor",
           "link": "https://en.wikipedia.org/wiki/Douglas_Engelbart",
           "photo_url": "/_media/inspirations/Douglas-Engelbart.jpg"
@@ -74,13 +81,6 @@
           "desc": "Software engineer",
           "link": "https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)",
           "photo_url": "/_media/inspirations/Margaret-Hamilton.jpg"
-     },
-     
-     {
-          "name": "Grace Hopper",
-          "desc": "Software engineer",
-          "link": "https://en.wikipedia.org/wiki/Grace_Hopper",
-          "photo_url": "/_media/inspirations/Grace-Hopper.jpg"
      },
      
      {
