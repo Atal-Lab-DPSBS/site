@@ -11,7 +11,14 @@
 
 	<body>
 
-          <main>
+		{% include "header.liquid" %}
+
+          <main
+		class="
+		{% if page.mainstyle %}
+  			{{ page.mainstyle }}
+		{% endif %}"
+		>
                {{ content }}
           </main>
           

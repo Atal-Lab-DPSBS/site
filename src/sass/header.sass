@@ -1,0 +1,35 @@
+nav
+     display: flex
+     flex-direction: row
+     justify-content: space-between
+     align-items: center
+     padding: 2em 3em
+     background-color: rgba(255, 255, 255, 0.5)
+     position: fixed
+     width: 100vw
+     z-index: 10000
+     height: 48px
+     backdrop-filter: blur(10px)
+     -webkit-backdrop-filter: blur(10px)
+     -moz-backdrop-filter: blur(10px)
+     -o-backdrop-filter: blur(10px)
+     border-bottom: 1px solid rgba(0, 0, 0, 0.25)
+     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25)
+     a
+          text-decoration: none
+          font-family: 'IBM Plex Mono'
+          color: #fff
+          transition: all linear .25s
+          &:hover 
+               background-color: rgba(0, 0, 0, 0.05)
+     img
+          height: 48px
+          
+
+.dark
+     background-color: rgba(0, 0, 0, 0.5)
+     border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+     a
+          color: #000
+          &:hover 
+               background-color: rgba(255, 255, 255, 0.05)

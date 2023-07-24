@@ -29,6 +29,11 @@ module.exports = function (eleventyConfig) {
 	})
 	eleventyConfig.setLibrary("md", eleventyRenderer)
 
+	eleventyConfig.addPairedShortcode("setPageVar", function(content, name) { 
+		this.page[name] = content;
+		return '';
+	 });
+
 	// Liquid options
 	eleventyConfig.setLiquidOptions({
 		dynamicPartials: true,

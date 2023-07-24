@@ -1,0 +1,13 @@
+<nav class="
+{% if page.navstyle %}
+  {{ page.navstyle }}
+{% endif %}
+">
+<a href="/"><img id="nav-logo" src="/_media/logos/logo-small-dark.svg" alt="logo"></a>
+<script>
+  if (document.getElementsByTagName("nav")[0].classList.contains("dark")) {
+    document.getElementById('nav-logo').src="/_media/logos/logo-small-light.svg"
+  }
+</script>
+
+</nav>
