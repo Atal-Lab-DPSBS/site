@@ -1,3 +1,5 @@
+@import "colors"
+
 nav
      display: flex
      flex-direction: row
@@ -6,7 +8,7 @@ nav
      padding: 2em 3em
      background-color: rgba(255, 255, 255, 0.5)
      position: fixed
-     width: 100vw
+     width: calc(100vw - 6em)
      z-index: 10000
      height: 48px
      backdrop-filter: blur(10px)
@@ -24,6 +26,23 @@ nav
                background-color: rgba(0, 0, 0, 0.05)
      img
           height: 48px
+
+     .links
+          display: flex
+          flex-direction: row
+          gap: 1.5em
+          display: relative
+          align-items: center
+          a
+               color: $gray85
+               text-decoration: none
+               &:hover, &:active
+                    color: #fff
+                    text-decoration: underline
+                    font-weight: bold
+                    transition: all linear 0.25s
+               &::after
+                    content: "›"
           
 
 .dark
