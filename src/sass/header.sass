@@ -27,14 +27,25 @@ nav
      img
           height: 48px
 
-     .links
+     .link-drawer-handle
+          visibility: hidden
+          display: none
+          transition: all ease-in-out 0.25s
+          transform: rotate(0deg)
+          background-color: transparent
+          border: none
+          box-shadow: none
+          img
+               height: 24px
+
+     .links-container
           display: flex
           flex-direction: row
           gap: 1.5em
           display: relative
           align-items: center
           a
-               color: $gray85
+               color: $gray25
                text-decoration: none
                &:hover, &:active
                     color: #fff
@@ -43,12 +54,58 @@ nav
                     transition: all linear 0.25s
                &::after
                     content: "›"
+
+@media (max-width: 720px) 
+     nav
+          height: 24px
+          padding: 1em 2em
+          width: calc(100vw - 4em)
+          background-color: rgb(255, 255, 255)
+          img
+               height: 24px
+          .link-drawer-handle
+               visibility: visible
+               display: block
+          .links 
+               position: absolute
+               top: calc(24px + 2em)
+               left: 0
+               height: 0
+               width: calc(100vw - 4em)
+               overflow-y: scroll
+               overflow-x: hidden
+               background-color: #00f
+               padding: 0em 2em
+               background-color: rgb(255, 255, 255)
+               transition: height ease-in-out 0.25s, padding ease-in-out 0.25s
+               .links-container
+                    flex-direction: column
+                    align-items: flex-start
+                    font-size: 25px
+          .rotated
+               transform: rotate(90deg)
+
+          .visible
+               height: calc(100vh - 24px - 2em - 4em)
+               padding: 2em 2em
+          
+     .dark
+          background-color: rgb(0, 0, 0) !important
+          .links
+               background-color: rgb(0, 0, 0)
+
+     .link-drawer-open
+          border-bottom: none !important
+          box-shadow: none !important
+
+
+	
           
 
 .dark
      background-color: rgba(0, 0, 0, 0.5)
      border-bottom: 1px solid rgba(255, 255, 255, 0.25)
      a
-          color: #000
+          color: $gray85 !important
           &:hover 
                background-color: rgba(255, 255, 255, 0.05)
